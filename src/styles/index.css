@@ -149,12 +149,15 @@ body {
 
 .container {
   width: 100%;
-  max-width: 400px;
+  max-width: 400px; /* Up from 350px */
   padding: var(--spacing-4);
+  margin: 0 auto;
 }
 
-/* Estilos da calculadora */
+/* Add a minimum width to the calculator */
 .calculator {
+  width: 100%;
+  min-width: 320px; /* This ensures a minimum width regardless of container */
   background-color: var(--card);
   border-radius: var(--border-radius-lg);
   border: var(--border-width) solid var(--border);
@@ -242,7 +245,7 @@ body {
 .calculator-buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--spacing-2);
+  gap: var(--spacing-3); /* Increase this from var(--spacing-2) */
   padding: var(--spacing-4);
 }
 
